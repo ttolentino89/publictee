@@ -1,4 +1,4 @@
-## PublicTee aka 'TestPublic' Product Finder!
+## PublicTee aka 'TestPublic' Product Finder! :tshirt:
 
 TestPublic is a Ruby Command Line program that reads product data from a JSON file and allows users to find product details by type and zero or more options, and returns the remaining categories with the available options.
 
@@ -24,18 +24,18 @@ Considering that Ruby is the language I have the least experience writing, this 
 
 I also found myself making the mistake of writing .includes? instead of .include? more often than I like to admit, most likely from JavaScript + Java muscle memory. And forget "elsif", every single one of those was originally written as an "elseif" until my code editor pointed out that what I had just typed was incorrect.
 
-And I will be the first to admit that I'm not entirely sure what the runtime is for this program, but considering that my methods for finding product options are relatively heavy because of several repetitive conditional statements, I wouldn't be surprised if this isn't the most efficient runtime. But hey, at least it works flawlessly! :partyemoji:
+And I will be the first to admit that I'm not entirely sure what the runtime is for this program, but considering that my methods for finding product options are relatively heavy because of several repetitive conditional statements, I wouldn't be surprised if this isn't the most efficient runtime. But hey, at least it works flawlessly! :tada:
 
 That being said, I would like to adhere to the "DRY" (don't repeat yourself) philosophy of programming, which means that there's probably plenty of room for refactoring + "Marie Kondo-ing" this program's code.
 
 
 ## Future goals:
 
-Unfortunately, I was not yet able to create automated unit tests for this particular program, however I do plan on eventually creating an rspec file to ensure that my methods are actually doing what they're supposed to (which, as all developers know, is half the battle, if not more.) Passing green tests are quite possibly the most satisfying thing ever and I can't wait to create those for TestPublic.
+Unfortunately, I was not yet able to create automated unit tests for this particular program. However, I do plan on eventually creating an rspec file to ensure that my methods are actually doing what they're supposed to (which, as all developers know, is half the battle, if not more.) Passing green tests are quite possibly the most satisfying thing ever and I can't wait to create those for TestPublic.
 
 You can learn more about rspec [here](https://rspec.info/).
 
-As of right now, PublicTee is only able to accept user choices in the "correct" order, i.e. tshirt > color > size as outlined in the code snippet below:
+As of right now, TestPublic is only able to accept user choices in the "correct" order, i.e. tshirt > color > size as outlined in the code snippet below:
 
 ```
 #map through all tshirt options
