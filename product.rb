@@ -1,4 +1,6 @@
 class Product
+  # initialize empty array
+  @@all = []
 
   attr_reader  :product_type, :options
 
@@ -6,17 +8,35 @@ class Product
     @product_type = product_type
     @options = options
   end
+
+  def self.all
+    @@all.select { |product| product.is_a?(self)}
+  end
+
+  def self.getNewProduct(product_type, options)
+    if product_type == 'tshirt'
+      Tshirt.new(options['gender'], options['color'], options['size'])
+    elsif product_type == 'mug'
+      Mug.new(options['type'])
+    elsif product_type == 'sticker'
+      Sticker.new(options['size'], options['style'])
+    end
+  end
 end
 
 class Tshirt < Product
+
   attr_reader :gender, :color, :size
 
   def initialize(gender, color, size)
     @product_type = 'tshirt'
-    @options = { gender: gender, color: color, size: size}
+    @options = {gender: gender,
+                color: color,
+                size: size}
     @gender = gender
     @color = color
     @size = size
+    @@all << self
   end
 end
 
@@ -24,9 +44,10 @@ class Mug < Product
 attr_reader :type
 
   def initialize(type)
-    @product_type = 'Mug'
-    @options = { type: type }
+    @product_type = 'mug'
+    @options = {type: type}
     @type = type
+    @@all << self
   end
 end
 
@@ -35,8 +56,10 @@ class Sticker < Product
 
   def initialize(size, style)
     @product_type = 'sticker'
-    @options = { size: size, style: style }
+    @options = {size: size,
+                style: style}
     @size = size
     @style = style
+    @@all << self
   end
 end

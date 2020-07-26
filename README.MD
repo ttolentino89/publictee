@@ -28,8 +28,11 @@ A healthy amount of googling + stack overflowing went into this project's creati
 - http://ruby-for-beginners.rubymonstas.org/writing_classes/instance_variables.html
 - https://stackoverflow.com/questions/5544858/accessing-elements-of-nested-hashes-in-ruby
 - https://stackoverflow.com/questions/37535971/how-do-i-import-ruby-classes-into-the-main-file
+- https://www.honeybadger.io/blog/ruby-self-cheat-sheet/
+- https://apidock.com/ruby/Enumerable/all%3f
+- https://stackoverflow.com/questions/5018633/what-is-the-difference-between-print-and-puts
 
-Before settling on creating a simple(ish) Ruby program, I originally had ambitious plans to create this in Rails with Docker, but eventually realized that there was probably no need for this since there wouldn't be an external database to connect to, nor would there really be any front-facing UI. To top it all off, there was literally no need for containerization, and I really only wanted to use Docker as a learning experience but also didn't want to fall into the "rabbit hole" with a weeklong time constraint. I did however create a scaffolded Rails template with Docker and MySQL for this project, which I may upload on a separate branch. To create this, I literally just followed the (in my opinion, solid) YouTube tutorial below:
+Before settling on creating a simple(ish) Ruby program, I originally had ambitious plans to create this in Rails with Docker, but eventually realized that there was probably no need for this since there wouldn't be an external database to connect to, nor would there really be any client-facing UI. To top it all off, there was literally no need for containerization, and I really only wanted to use Docker as a learning experience but also didn't want to fall into the "rabbit hole" with a weeklong time constraint. I did however create a scaffolded Rails template with Docker and MySQL for this project, which I may upload on a separate branch. To create this, I literally just followed the (in my opinion, solid) YouTube tutorial below:
 
 https://www.youtube.com/watch?v=a-jcTib9ZPA
 
