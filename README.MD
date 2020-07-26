@@ -7,7 +7,7 @@ TestPublic is a Ruby Command Line program that reads product data from a JSON fi
 To run this program locally, please enter the following commands in your terminal:
 
 1.  ```git clone https://github.com/ttolentino89/publictee.git```
-2.  ```cd publictee```
+2.  ```cd testpublic```
 3.  ```ruby testpublic.rb```
 
 ## Future goals:
