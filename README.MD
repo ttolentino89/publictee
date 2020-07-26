@@ -2,6 +2,9 @@
 
 TestPublic is a Ruby Command Line program that reads product data from a JSON file and allows users to find product details by type and zero or more options, and returns the remaining categories with the available options.
 
+Here it is in action:
+
+
 ## Implementation + Testing
 
 To run this program locally, please enter the following commands in your terminal:
@@ -10,12 +13,41 @@ To run this program locally, please enter the following commands in your termina
 2.  ```cd testpublic```
 3.  ```ruby testpublic.rb```
 
+If you are not familiar with the command line, that's totally okay! Here's a great tutorial 
+
+## Observations
+
+Considering that Ruby is the language I have the least experience writing, this was a fantastic exercise to get some practice in and familiarize myself with Ruby syntax, and I noticed that a lot of object-oriented principles were more or less the same as with other programming languages I've worked with, especially when it came to class methods.
+
+I also found myself making the mistake of writing .includes? instead of .include? more often than I like to admit, most likely from JavaScript + Java muscle memory. And forget "elsif", every single one of those was originally written as an "elseif" until my code editor pointed out that what I had just typed was incorrect.
+
+And I will be the first to admit that I'm not entirely sure what the runtime is for this program, but considering that my methods for finding product options are relatively heavy because of several repetitive conditional statements, I wouldn't be surprised if this isn't the most efficient runtime. But hey, at least it works flawlessly! :partyemoji:
+
+That being said, I would like to adhere to the "DRY" (don't repeat yourself) philosophy of programming, which means that there's probably plenty of room for refactoring + "Marie Kondo-ing" this program's code.
+
 ## Future goals:
 
-Unfortunately, I was not yet able to create automated unit tests for this particular program, however I do plan on eventually creating an rspec file to ensure that my methods are actually doing what they're supposed to (which, as all developers know, is half the battle, if not more.) Sometimes there's just nothing more satisfying than passing green tests!
+Unfortunately, I was not yet able to create automated unit tests for this particular program, however I do plan on eventually creating an rspec file to ensure that my methods are actually doing what they're supposed to (which, as all developers know, is half the battle, if not more.) Passing green tests are quite possibly the most satisfying thing ever and I can't wait to create those for TestPublic.
 
 You can learn more about rspec here:
 https://rspec.info/
+
+As of right now, PublicTee is only able to accept user choices in the "correct" order, i.e. tshirt > color > size as outlined in the code snippet below:
+
+```
+#map through all tshirt options
+genders = Tshirt.all.map(&:gender).uniq
+colors = Tshirt.all.map(&:color).uniq
+sizes = Tshirt.all.map(&:size).uniq
+#split user selection subcategories into gender, color, size
+selectedGender = options[1]
+selectedColor = options[2]
+selectedSize = options[3]
+```
+
+If the user inputs their selection's options in the wrong order, such as "red tshirt male" for example, the program is unable to recognize this and fails. I'd like to refactor this so that the user can input selections in any order, and still receive a valid answer.
+
+I would also like to add an option to have the user choose whether or not they'd like to continue + search for another another item, or exit. As of right now, this program only continues if the user's original selection was invalid, as it prompts the user to select again and recalls the getItem method. This is probably unnecessary and is not in the original assignment, but I think it'd add a nicer overall user experience instead of cold booting the user out once the program is finished running.
 
 ## References:
 
