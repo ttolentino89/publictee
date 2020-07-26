@@ -22,6 +22,7 @@ https://rspec.info/
 A healthy amount of googling + stack overflowing went into this project's creation, which includes (but is not limited to) the following resources and links below:
 
 - https://hackernoon.com/ruby-how-to-readwrite-json-file-a23h3vxa
+- https://www.twilio.com/blog/2015/10/4-ways-to-parse-a-json-api-with-ruby.html
 - https://learn.co/lessons/nested-arrays-ruby
 - https://git.generalassemb.ly/sei-nyc-mandalorians/Ruby_OOP_lesson
 - http://ruby-for-beginners.rubymonstas.org/writing_classes/instance_variables.html
