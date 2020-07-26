@@ -75,7 +75,7 @@ Before settling on creating a simple(ish) Ruby program, I originally had ambitio
 
 https://www.youtube.com/watch?v=a-jcTib9ZPA
 
-If you're interested in using Ruby with Docker, Docker's has excellent official doc(k?)umentation on how to do so [here](https://hub.docker.com/_/ruby).
+If you're interested in using Ruby with Docker, Docker has excellent official doc(k?)umentation on how to do so [here](https://hub.docker.com/_/ruby).
 
 
 ## Special thanks to:
