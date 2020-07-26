@@ -19,6 +19,9 @@ def getItem
     getMugOptions(options)
   elsif product_type == 'sticker'
     getStickerOptions(options)
+  else
+    puts "Nothing, because this item doesn't exist! Please enter a valid selection."
+    getItem
   end
   puts 'Thank you and have a nice day :)'
 end
