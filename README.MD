@@ -7,7 +7,7 @@ Here it is in action:
 ![testpublicdemo](https://user-images.githubusercontent.com/27389714/88489289-7d594080-cf61-11ea-914b-0cf693167f72.gif)
 
 
-## Implementation + Testing
+## Implementation + Testing :heavy_check_mark:
 
 To run this program locally, please enter the following commands in your terminal:
 
@@ -18,7 +18,7 @@ To run this program locally, please enter the following commands in your termina
 If you're not familiar with using the terminal or command line interface (CLI) on your computer, that's totally okay! There's a great tutorial on common CLI commands [here](https://blog.galvanize.com/how-to-use-the-terminal-command-line/) that I highly recommend for first-timers.
 
 
-## Observations
+## Observations :mag:
 
 Considering that Ruby is the language I have the least experience writing, this was a fantastic exercise to get some practice in and familiarize myself with Ruby syntax. I noticed that a lot of object-oriented principles were more or less the same as with other programming languages I've worked with, especially when it came to class methods.
 
@@ -29,7 +29,7 @@ And I will be the first to admit that I'm not entirely sure what the runtime is 
 That being said, I would like to adhere to the "DRY" (don't repeat yourself) philosophy of programming, which means that there's probably plenty of room for refactoring + "Marie Kondo-ing" this program's code.
 
 
-## Future goals:
+## Future goals :bulb:
 
 Unfortunately, I was not yet able to create automated unit tests for this particular program. However, I do plan on eventually creating an rspec file to ensure that my methods are actually doing what they're supposed to (which, as all developers know, is half the battle, if not more.) Passing green tests are quite possibly the most satisfying thing ever and I can't wait to create those for TestPublic.
 
@@ -56,7 +56,7 @@ If the user inputs their selection's options in the wrong order, such as "red ts
 I would also like to add an option to have the user choose whether or not they'd like to continue + search for another another item, or exit. As of right now, this program only continues if the user's original selection was invalid, as it prompts the user to select again and recalls the getItem method. This is probably unnecessary and is not in the original assignment, but I think it'd add a nicer overall user experience instead of cold booting the user out once the program is finished running.
 
 
-## References:
+## References :books:
 
 A healthy amount of googling + stack overflowing went into this project's creation, which includes (but is not limited to) the following resources and links below:
 
@@ -78,6 +78,6 @@ https://www.youtube.com/watch?v=a-jcTib9ZPA
 If you're interested in using Ruby with Docker, Docker has excellent official doc(k?)umentation on how to do so [here](https://hub.docker.com/_/ruby).
 
 
-## Special thanks to:
+## Special thanks to :raised_hands:
 
 Ms. Mary Rooney (Recruiter) & Mr. Michael Porter (Engineering Manager) for giving me the chance to to take a stab at this fun Ruby learning opportunity!
